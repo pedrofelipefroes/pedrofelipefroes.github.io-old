@@ -1,0 +1,11 @@
+# macos
+*.DS_Store
+
+# misc
+node_modules/
+public/
+build/
+
+# yarn
+*.lock
+*.log
