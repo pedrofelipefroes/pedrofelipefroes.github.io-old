@@ -1,0 +1,35 @@
+{{#main}}
+	<main>
+		<h1>
+			{{#title}}
+				<span>{{.}}</span><br/>
+			{{/title}}
+		</h1>
+		<h3>
+			{{#subtitle}}
+				<span>{{.}}</span><br/>
+			{{/subtitle}}
+		</h3>
+		<p>{{description}}</p>
+		<ul>
+			<li>
+				<a href="{{resume.link}}">{{resume.name}}</a>
+			</li>
+			<li>
+				<a href="{{linkedin.link}}">{{linkedin.name}}</a>
+			</li>
+			<li>
+				<a href="{{email.link}}">{{email.name}}</a>
+			</li>
+			</li>
+		</ul>
+		<h2>
+			{{headline}}
+		</h2>
+		{{#content}}
+			<a href="{{url}}">
+				<h3>{{name}}</h3>
+			</a>
+		{{/content}}
+	</main>
+{{/main}}
