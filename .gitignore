@@ -3,8 +3,9 @@
 
 # misc
 node_modules/
-public/
 build/
+*.html
+*.css
 
 # yarn
 *.lock

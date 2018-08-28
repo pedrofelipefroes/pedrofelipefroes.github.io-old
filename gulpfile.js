@@ -15,7 +15,7 @@ gulp.task('compile-mustache', function () {
       { extension: '.html' },
       {}
     ))
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('.'));
 });
 
 gulp.task('compile-sass', function () {
@@ -23,7 +23,7 @@ gulp.task('compile-sass', function () {
     .src('src/styles/index.scss')
     .pipe(sass({ errLogToConsole: true }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('.'));
 });
 
 gulp.task('serve-views', function () {
