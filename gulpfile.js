@@ -1,9 +1,11 @@
 'use strict';
 
+const cleanCSS = require('gulp-clean-css');
 const flatten = require('gulp-flatten');
 const gulp = require('gulp');
 const mergeJSON = require('gulp-merge-json');
 const mustache = require('gulp-mustache');
+const sass = require('gulp-sass');
 
 gulp.task('compile-mustache', function () {
   return gulp
@@ -13,7 +15,15 @@ gulp.task('compile-mustache', function () {
       { extension: '.html' },
       {}
     ))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('public'));
+});
+
+gulp.task('compile-sass', function () {
+  return gulp
+    .src('src/styles/index.scss')
+    .pipe(sass({ errLogToConsole: true }))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('serve-views', function () {
@@ -29,10 +39,10 @@ gulp.task('serve-json', function () {
     .pipe(mergeJSON({
       fileName: 'index.json'
     }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
 });
 
-const build = gulp.parallel('compile-mustache');
+const build = gulp.parallel('compile-mustache', 'compile-sass');
 const serve = gulp.parallel('serve-views', 'serve-json');
 const start = gulp.series(serve, build);
 
