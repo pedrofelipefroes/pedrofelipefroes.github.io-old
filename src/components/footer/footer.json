@@ -1,9 +1,9 @@
 {
   "footer": {
-    "description": "This site was conceived, designed, and developed by me. Check its project on GitLab.",
-    "gitlab": {
+    "description": "This site was conceived, designed, and developed by me. Check its source code and Sketch project on GitHub.",
+    "repo": {
       "name": "Source code",
-      "link": "https://gitlab.com/pedrofelipefroes/about-me"
+      "link": "https://github.com/pedrofelipefroes/pedrofelipefroes.github.io"
     }
   }
 }
