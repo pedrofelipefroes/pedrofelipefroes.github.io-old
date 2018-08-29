@@ -4,8 +4,6 @@
 # misc
 node_modules/
 build/
-*.html
-*.css
 
 # yarn
 *.lock
