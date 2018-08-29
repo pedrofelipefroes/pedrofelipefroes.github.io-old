@@ -1,23 +1,16 @@
 {
   "main": {
     "title": ["Imagine", "Design", "Code", "Repeat"],
-    "subtitle": ["I am Froes.", "UI/UX Designer and Developer."],
-    "description": "I am a UI/UX Designer and Developer with a degree in Computer Engineering. I'm passionate about creativity and frontend development, and I'm driven by bringing designing and coding closer by building design systems and developing well-organized CSS architectures. I have experience functioning as a UI, UX, and Visual Designer, as well as a Frontend Engineer, which gives me a diverse set of design and development skills.",
-    "resume": {
-      "name": "Resumé",
-      "link": "https://www.dropbox.com/s/z97a2df0tq0tadw/UI-UX%20Developer%20%E2%80%93%20Pedro%20Felipe%20Froes.pdf?dl=0"
-    },
-    "linkedin": {
-      "name": "Profile",
-      "link": "https://www.linkedin.com/in/pedrofelipefroes/"
-    },
-    "email": {
-      "name": "Contact",
-      "link": "mailto:pedrofelipefroes@gmail.com"
-    },
-    "heading": "Portfolio",
+    "subtitle": "I am Froes, a UI and UX Designer and Developer.",
+    "description": "I have experience functioning as a UI, UX, and Visual Designer, as well as a Frontend Engineer, which gives me a diverse set of design and development skills. Let’s work together!",
+    "contact": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/pedrofelipefroes/" },
+      { "name": "Mail", "url": "mailto:pedrofelipefroes@gmail.com" },
+      { "name": "Resumé", "url": "https://www.dropbox.com/s/z97a2df0tq0tadw/UI-UX%20Developer%20%E2%80%93%20Pedro%20Felipe%20Froes.pdf?dl=0" }
+    ],
     "content": [
-      { "name": "Alpha Questers", "url": "/alpha-questers.html" }
+      { "name": "Alpha Questers", "url": "work/alpha-questers.html" },
+      { "name": "Avenue Code Design System", "url": "work/avenue-code-design-system.html" }
     ]
   }
 }

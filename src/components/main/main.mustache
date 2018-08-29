@@ -5,27 +5,15 @@
 				<span>{{.}}</span><br/>
 			{{/title}}
 		</h1>
-		<h3>
-			{{#subtitle}}
-				<span>{{.}}</span><br/>
-			{{/subtitle}}
-		</h3>
+		<h3>{{subtitle}}</h3>
 		<p>{{description}}</p>
 		<ul>
+			{{#contact}}
 			<li>
-				<a href="{{resume.link}}">{{resume.name}}</a>
+				<a href="{{url}}">{{name}}</a>
 			</li>
-			<li>
-				<a href="{{linkedin.link}}">{{linkedin.name}}</a>
-			</li>
-			<li>
-				<a href="{{email.link}}">{{email.name}}</a>
-			</li>
-			</li>
+			{{/contact}}
 		</ul>
-		<h2>
-			{{headline}}
-		</h2>
 		{{#content}}
 			<a href="{{url}}">
 				<h3>{{name}}</h3>
