@@ -1,0 +1,52 @@
+@import '_settings', '_tools';
+
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $spacing {
+    --color-#{$name}: #{$value};
+  }
+}
+
+body {
+  color: color("black");
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+}
+
+h1 {
+  font-family: $h1-font-family;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
+  text-transform: $h1-text-transform;
+}
+
+h2 {
+  font-family: $h2-font-family;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $h2-line-height;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  line-height: $h3-line-height;
+}
+
+small {
+  font-size: $small-font-size;
+  font-weight: $small-font-weight;
+  line-height: $small-line-height;
+}
+
+a {
+  color: color("black");
+  font-weight: $link-font-weight;
+  text-transform: $link-text-transform;
+}

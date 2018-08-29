@@ -1,0 +1,7 @@
+@function color($name) {
+  @return var(--color-#{$name});
+}
+
+@function size($name) {
+  @return var(--size-#{$name});
+}

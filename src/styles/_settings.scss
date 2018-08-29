@@ -1,0 +1,68 @@
+/* 
+ * Colors
+ */
+
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 95%);
+$white: hsl(0, 0%, 100%);
+$colors: (
+  "black": $black,
+  "gray": $gray,
+  "white": $white
+);
+
+/* 
+ * Spacing
+ */
+
+$spacing-base: 5px;
+$spacing: (
+  1: $spacing-base,
+  2: $spacing-base*2,
+  3: $spacing-base*4,
+  4: $spacing-base*8,
+  5: $spacing-base*16
+);
+
+$display-breakpoint: 1024px;
+$container-max-width: 1024px;
+
+/*
+ * Typography
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:900|Source+Sans+Pro:400,600');
+
+$font-family-title: 'Source Code Pro', monospace;
+$font-family-body: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-black: 900;
+
+$body-font-family: $font-family-body;
+$body-font-size: 1rem;
+$body-font-weight: $font-weight-normal;
+$body-line-height: 1.5;
+
+$h1-font-family: $font-family-title;
+$h1-font-size: 3rem;
+$h1-font-weight: $font-weight-black;
+$h1-line-height: 1;
+$h1-text-transform: uppercase;
+
+$h2-font-family: $font-family-title;
+$h2-font-size: 2rem;
+$h2-font-weight: $font-weight-black;
+$h2-line-height: 1.25;
+
+$h3-font-size: 1.5rem;
+$h3-font-weight: $font-weight-bold;
+$h3-line-height: 1.25;
+
+$small-font-size: .75rem;
+$small-font-weight: $font-weight-bold;
+$small-line-height: 1.5;
+
+$link-font-weight: $font-weight-bold;
+$link-text-transform: uppercase;
