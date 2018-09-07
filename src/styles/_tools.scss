@@ -1,7 +1,31 @@
+@import '_settings';
+
 @function color($name) {
   @return var(--color-#{$name});
 }
 
 @function size($name) {
   @return var(--size-#{$name});
+}
+
+@mixin display-bp {
+  @media screen and (min-width: $display-bp) {
+    @content;
+  }
+}
+
+@mixin display-container {
+  margin: 0 auto;
+  max-width: $display-container-max-width;
+}
+
+@mixin flex-layout ($align-items: null, $justify-content: null, $flex-direction: column, $margin-bottom: map-get($spacing, 3)) {
+  flex-direction: $flex-direction;
+
+  @if $align-items { align-items: $align-items }
+  @if $justify-content { justify-content: $justify-content }
+
+  *:not(:last-child) {
+    margin-bottom: $margin-bottom;
+  }
 }
