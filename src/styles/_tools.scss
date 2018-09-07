@@ -19,13 +19,21 @@
   max-width: $display-container-max-width;
 }
 
-@mixin flex-layout ($align-items: null, $justify-content: null, $flex-direction: column, $margin-bottom: map-get($spacing, 3)) {
-  flex-direction: $flex-direction;
+@mixin flex-layout ($align: null, $justify: null, $direction: column, $spacing: map-get($spacing, 3)) {
+  flex-direction: $direction;
 
-  @if $align-items { align-items: $align-items }
-  @if $justify-content { justify-content: $justify-content }
-
-  *:not(:last-child) {
-    margin-bottom: $margin-bottom;
+  @if $align { align-items: $align }
+  @if $justify { justify-content: $justify }
+  @if $direction == (column or row) {
+    & > *:not(:last-child) {
+      @if $direction == column { margin-bottom: $spacing; }
+      @if $direction == row { margin-right: $spacing; }
+    }
+  }
+  @if $direction == (column-reverse or row-reverse) {
+    & > *:not(:last-child) {
+      @if $direction == column-reverse { margin-bottom: $spacing; }
+      @if $direction == row-reverse { margin-right: $spacing; }
+    }
   }
 }

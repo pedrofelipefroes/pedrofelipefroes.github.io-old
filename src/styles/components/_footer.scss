@@ -1,7 +1,7 @@
 @import '../_settings', '../_tools';
 
 .c-footer {
-  @include flex-layout($margin-bottom: map-get($spacing, 3));
+  @include flex-layout($spacing: map-get($spacing, 3));
 
   margin: 0 map-get($spacing, 3) map-get($spacing, 5);
 }
