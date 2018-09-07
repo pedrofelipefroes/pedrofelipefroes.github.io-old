@@ -1,5 +1,5 @@
 {
-  "main": {
+  "header": {
     "title": ["Imagine", "Design", "Code", "Repeat"],
     "subtitle": "I am Froes, a UI and UX Designer and Developer.",
     "description": "I have experience functioning as a UI, UX, and Visual Designer, as well as a Frontend Engineer, which gives me a diverse set of design and development skills. Let’s work together!",
@@ -7,10 +7,6 @@
       { "name": "LinkedIn", "url": "https://www.linkedin.com/in/pedrofelipefroes/" },
       { "name": "Mail", "url": "mailto:pedrofelipefroes@gmail.com" },
       { "name": "Resumé", "url": "https://www.dropbox.com/s/z97a2df0tq0tadw/UI-UX%20Developer%20%E2%80%93%20Pedro%20Felipe%20Froes.pdf?dl=0" }
-    ],
-    "content": [
-      { "name": "Alpha Questers", "url": "work/alpha-questers.html" },
-      { "name": "Avenue Code Design System", "url": "work/avenue-code-design-system.html" }
     ]
   }
 }

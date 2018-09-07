@@ -1,0 +1,7 @@
+@import '../_settings', '../_tools';
+
+.c-header {
+  @include flex-layout($spacing: map-get($spacing, 4));
+
+  margin: map-get($spacing, 5) map-get($spacing, 3) 0;
+}

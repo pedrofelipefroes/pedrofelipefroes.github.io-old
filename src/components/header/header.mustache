@@ -1,12 +1,14 @@
-{{#main}}
-	<main>
+{{#header}}
+	<header class="c-header">
 		<h1>
 			{{#title}}
 				<span>{{.}}</span><br/>
 			{{/title}}
 		</h1>
-		<h3>{{subtitle}}</h3>
-		<p>{{description}}</p>
+		<section>
+			<h3>{{subtitle}}</h3>
+			<p>{{description}}</p>
+		</section>
 		<ul>
 			{{#contact}}
 			<li>
@@ -14,10 +16,5 @@
 			</li>
 			{{/contact}}
 		</ul>
-		{{#content}}
-			<a href="{{url}}">
-				<h3>{{name}}</h3>
-			</a>
-		{{/content}}
-	</main>
-{{/main}}
+	</header>
+{{/header}}
