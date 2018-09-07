@@ -1,0 +1,21 @@
+@import '_settings', '_tools';
+
+$box-sides: top right bottom left;
+
+@each $side in $box-sides {
+  .u-m-#{$side} {
+    @for $i from 0 through length($spacing) {
+      &--#{$i} {
+        margin-#{$side}: spacing(#{$i});
+      }
+    }
+  }
+
+  .u-p-#{$side} {
+    @for $i from 0 through length($spacing) {
+      &--#{$i} {
+        padding-#{$side}: spacing(#{$i});
+      }
+    }
+  }
+}

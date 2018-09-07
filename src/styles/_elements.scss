@@ -6,7 +6,7 @@
   }
 
   @each $name, $value in $spacing {
-    --color-#{$name}: #{$value};
+    --spacing-#{$name}: #{$value};
   }
 }
 
@@ -16,6 +16,10 @@ body {
   font-size: $body-font-size;
   font-weight: $body-font-weight;
   line-height: $body-line-height;
+}
+
+p {
+  max-width: $text-readability-max-width;
 }
 
 h1 {

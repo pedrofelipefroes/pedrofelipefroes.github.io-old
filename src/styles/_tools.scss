@@ -4,8 +4,8 @@
   @return var(--color-#{$name});
 }
 
-@function size($name) {
-  @return var(--size-#{$name});
+@function spacing($name) {
+  @return var(--spacing-#{$name});
 }
 
 @mixin display-bp {
@@ -20,20 +20,19 @@
 }
 
 @mixin flex-layout ($align: null, $justify: null, $direction: column, $spacing: map-get($spacing, 3)) {
+  display: flex;
   flex-direction: $direction;
 
   @if $align { align-items: $align }
   @if $justify { justify-content: $justify }
-  @if $direction == (column or row) {
-    & > *:not(:last-child) {
-      @if $direction == column { margin-bottom: $spacing; }
-      @if $direction == row { margin-right: $spacing; }
-    }
+  
+  & > *:not(:last-child) {
+    @if $direction == column { margin-bottom: $spacing; }
+    @else if $direction == row { margin-right: $spacing; }
   }
-  @if $direction == (column-reverse or row-reverse) {
-    & > *:not(:last-child) {
-      @if $direction == column-reverse { margin-bottom: $spacing; }
-      @if $direction == row-reverse { margin-right: $spacing; }
-    }
+  
+  & > *:not(:first-child) {
+    @if $direction == column-reverse { margin-bottom: $spacing; }
+    @else if $direction == row-reverse { margin-right: $spacing; }
   }
 }

@@ -1,15 +1,15 @@
 {{#header}}
 	<header class="c-header">
-		<h1>
+		<h1 class="c-header__title">
 			{{#title}}
-				<span>{{.}}</span><br/>
+				<span>{{.}}</span>
 			{{/title}}
 		</h1>
 		<section>
-			<h3>{{subtitle}}</h3>
+			<h3 class="u-m-bottom--2">{{subtitle}}</h3>
 			<p>{{description}}</p>
 		</section>
-		<ul>
+		<ul class="c-header__contact">
 			{{#contact}}
 			<li>
 				<a href="{{url}}">{{name}}</a>
