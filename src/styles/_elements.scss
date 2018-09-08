@@ -43,6 +43,16 @@ h3 {
   line-height: $h3-line-height;
 }
 
+h4 {
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
+}
+
+strong {
+  font-weight: $strong-font-weight;
+}
+
 small {
   font-size: $small-font-size;
   font-weight: $small-font-weight;

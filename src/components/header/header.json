@@ -1,8 +1,8 @@
 {
   "header": {
-    "title": ["Imagine", "Design", "Code", "Repeat"],
-    "subtitle": "I am Froes, a UI and UX Designer and Developer.",
-    "description": "I have experience functioning as a UI, UX, and Visual Designer, as well as a Frontend Engineer, which gives me a diverse set of design and development skills. Let’s work together!",
+    "title": "I believe design & code should intertwine to create whatever you imagine.",
+    "subtitle": "A strong connection between design and development enables the creation of thought-through design systems, well-organized CSS architectures, and beautiful design work. My experience as a Designer and Developer enables me to help your team achieve that.",
+    "description": ["I am Froes, UI and UX Designer and Developer.", "Let’s create together!"],
     "contact": [
       { "name": "LinkedIn", "url": "https://www.linkedin.com/in/pedrofelipefroes/" },
       { "name": "Mail", "url": "mailto:pedrofelipefroes@gmail.com" },

@@ -6,10 +6,16 @@
   margin: map-get($spacing, 5) map-get($spacing, 3) 0;
 
   &__title {
-    @include flex-layout($spacing: map-get($spacing, 0));
-
     @include display-bp {
-      @include flex-layout($direction: row, $spacing: map-get($spacing, 1));
+      max-width: 36ch;
+    }
+  }
+
+  &__info {
+    @include flex-layout($spacing: map-get($spacing, 3));
+
+    &__name {
+      @include flex-layout($spacing: map-get($spacing, 0));
     }
   }
 
