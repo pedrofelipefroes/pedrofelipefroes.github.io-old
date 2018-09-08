@@ -12,6 +12,7 @@
     background-position: center;
     background-size: 100%;
     border-radius: $card-border-radius;
+    color: color("black");
     min-height: $card-min-height;
     padding: $card-padding;
     text-transform: none;
@@ -19,6 +20,7 @@
 
     &:hover {
       background-size: 125%;
+      border-bottom: unset;
     }
   }
 }
