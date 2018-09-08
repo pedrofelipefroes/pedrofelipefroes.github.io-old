@@ -15,7 +15,7 @@
     @include flex-layout($spacing: map-get($spacing, 3));
 
     &__name {
-      @include flex-layout($spacing: map-get($spacing, 0));
+      max-width: 40ch;
     }
   }
 
