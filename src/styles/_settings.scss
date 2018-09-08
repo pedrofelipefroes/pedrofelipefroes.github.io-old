@@ -67,3 +67,12 @@ $small-line-height: 1.5;
 
 $link-font-weight: $font-weight-bold;
 $link-text-transform: uppercase;
+
+/*
+ * Cards
+ */
+
+$card-background-color: map-get($colors, "gray");
+$card-border-radius: map-get($spacing, 2);
+$card-min-height: map-get($spacing, 5)*4;
+$card-padding: map-get($spacing, 3);

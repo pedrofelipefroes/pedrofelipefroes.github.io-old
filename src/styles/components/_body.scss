@@ -1,0 +1,8 @@
+@import '../_settings', '../_tools';
+
+.c-body {
+  @include display-container;
+  @include flex-layout($spacing: map-get($spacing, 4));
+
+  padding: map-get($spacing, 3);
+}

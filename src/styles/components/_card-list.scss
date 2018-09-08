@@ -1,0 +1,18 @@
+@import '../_settings', '../_tools';
+
+.c-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: map-get($spacing, 3);
+
+  .c-card {
+    @include flex-layout($justify: flex-end, $spacing: map-get($spacing, 0));
+
+    background-color: $card-background-color;
+    border-radius: $card-border-radius;
+    min-height: $card-min-height;
+    padding: $card-padding;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
