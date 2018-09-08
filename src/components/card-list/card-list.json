@@ -1,10 +1,9 @@
 {
   "card-list": {
-    "content": [
-      { "name": "Alpha Questers", "url": "work/alpha-questers.html" },
-      { "name": "Avenue Code Design System", "url": "work/avenue-code-design-system.html" },
-      { "name": "Alpha Questers", "url": "work/alpha-questers.html" },
-      { "name": "Avenue Code Design System", "url": "work/avenue-code-design-system.html" }
-    ]
+    "content": [{
+      "name": "Mobile Web, Hybrid, or Native App Whitepaper",
+      "url": "work/mobile-apps-whitepaper/mobile-apps-whitepaper.html",
+      "thumbnail": "work/mobile-apps-whitepaper/thumbnail.jpg"
+    }]
   }
 }

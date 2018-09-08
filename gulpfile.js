@@ -12,7 +12,7 @@ gulp.task('clean', function () {
   return gulp
     .src(['build/', 'work/', '*.html', '*.css'], { allowEmpty: true, read: false })
     .pipe(cleanDir());
-})
+});
 
 gulp.task('compile-mustache', function () {
   return gulp
@@ -37,12 +37,19 @@ gulp.task('serve-index', function () {
   return gulp
     .src('src/index.mustache')
     .pipe(gulp.dest('build'));
-})
+});
+
+gulp.task('serve-img', function () {
+  return gulp
+    .src(['src/views/**/*.jpg', 'src/views/**/*.png'])
+    .pipe(flatten({ subPath: [-2, -1] }))
+    .pipe(gulp.dest('work'))
+});
 
 gulp.task('serve-views', function () {
   return gulp
     .src(['src/views/*/*.mustache'])
-    .pipe(flatten({ newPath: 'work/' }))
+    .pipe(flatten({ newPath: 'work/', includeParents: -1 }))
     .pipe(gulp.dest('build'));
 });
 
@@ -57,7 +64,7 @@ gulp.task('serve-json', function () {
 
 const clean = gulp.parallel('clean');
 const build = gulp.parallel('compile-mustache', 'compile-sass');
-const serve = gulp.parallel('serve-index', 'serve-views', 'serve-json');
+const serve = gulp.parallel('serve-index', 'serve-img', 'serve-views', 'serve-json');
 const start = gulp.series(clean, serve, build);
 
 gulp.task('default', start);
