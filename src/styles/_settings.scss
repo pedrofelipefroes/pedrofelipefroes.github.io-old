@@ -3,12 +3,12 @@
  */
 
 $black: hsl(0, 0%, 0%);
-$gray: hsl(0, 0%, 95%);
+$gray-100: hsl(0, 0%, 90%);
 $white: hsl(0, 0%, 100%);
 $blue: hsl(207, 100%, 50%);
 $colors: (
   "black": $black,
-  "gray": $gray,
+  "light-gray": $gray-100,
   "primary": $blue,
   "white": $white
 );
@@ -80,7 +80,7 @@ $link-text-transform: uppercase;
  * Cards
  */
 
-$card-background-color: map-get($colors, "gray");
+$card-background-color: map-get($colors, "light-gray");
 $card-border-radius: map-get($spacing, 2);
 $card-min-height: map-get($spacing, 5)*4;
 $card-padding: map-get($spacing, 3);
