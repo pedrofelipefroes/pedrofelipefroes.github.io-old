@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  {{> ../src/components/head/head }}
+  <link href="../../index.css" rel="stylesheet">
+</head>
+
+<body class="c-body">
+  {{#avenue-code-whitepapers-campaign}}
+  <header class="o-article__header">
+    <h1>{{title}}</h1>
+    <small class="o-article__tags">{{tags}}</small>
+  </header>
+  <article class="o-article__content">
+    {{#content}}
+    <p>{{part-1}}</p>
+    <p>
+      {{#part-2}}
+      {{subpart-1}}<a href="{{link.url}}">{{link.text}}</a>{{subpart-2}}
+      {{/part-2}}
+    </p>
+    <p>
+      {{#part-3}}
+      <a href="{{link-1.url}}">{{link-1.text}}</a>{{subpart-1}}<a href="{{link-2.url}}">{{link-2.text}}</a>{{subpart-2}}
+      {{/part-3}}
+    </p>
+    <p>
+      {{#part-4}}
+      {{subpart-1}}<a href="{{link.url}}">{{link.text}}</a>{{subpart-2}}
+      {{/part-4}}
+    </p>
+    <p>
+      {{#part-5}}
+      {{subpart-1}}
+      <ul class="o-article__list">
+        {{#link}}
+        <li>
+          <a href="{{url}}">{{text}}</a>
+        </li>
+        {{/link}}
+      </ul>
+      {{/part-5}}
+    </p>
+    {{/content}}
+  </article>
+  <section class="o-article__tldr">
+    <h3>TL;DR</h3>
+    <p>{{tldr}}</p>
+  </section>
+  {{/avenue-code-whitepapers-campaign}}
+</body>
+
+</html>

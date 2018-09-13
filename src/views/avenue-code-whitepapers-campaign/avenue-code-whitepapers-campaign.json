@@ -1,0 +1,54 @@
+{
+  "avenue-code-whitepapers-campaign": {
+    "title": "Avenue Code Whitepapers Campaign",
+    "tags": "Publication Design, Marketing & Advertising Design, Motion Design",
+    "content": {
+      "part-1": "Avenue Code is an IT consulting agency which strongly believes in sharing knowledge as a way to promote growth to itself and to its consultants. Its whitepaper campaign does just that: a consultant writes about a topic he's passionate about, and AC Design and Marketing teams get together to create a digital publication to share all of that passion.",
+      "part-2": {
+        "subpart-1": "The campaign started out in September 2017 and is currently in its fourth installment. I had the pleasure of being the lead creative designer in 3 of them, including its very first one, ",
+        "link": {
+          "text": "Microservices Architecture as a Large-Scale Refactoring Tool",
+          "url": "https://info.avenuecode.com/microservices-architecture-whitepaper"
+        },
+        "subpart-2": ". In order to translate such software development concept into graphics, we've represented the microservices refactoring as minor asteroids coming from a larger one, and this space-themed metaphor was an ode to the author's love for astronomy. Images were created through Sketch, and the text layout was done with Pages."
+      },
+      "part-3": {
+        "link-1": {
+          "text": "Mobile Web, Hybrid, or Native: A Roadmap to the Right App",
+          "url": "https://info.avenuecode.com/mobile-whitepaper"
+        },
+        "subpart-1": " is the campaign's third installment. For this one, we wanted to do something actual and trendy at the time, so I've worked on some isometric iPhone X models (thanks to the ",
+        "link-2": {
+          "text": "Sketch Isometric Plugin",
+          "url": "https://github.com/sureskumar/sketch-isometric"
+        },
+        "subpart-2": " and played with color gel gradients around them."
+      },
+      "part-4": {
+        "subpart-1": "The latest iteration of the campaign launched in August 2018 with ",
+        "link": {
+          "text": "Using Machine Learning to Improve Software Engine Search Results",
+          "url": "https://info.avenuecode.com/using-machine-learning-to-improve-software-engine-search-results"
+        },
+        "subpart-2": ". Typography played a big role in this one: the font Source Code Pro has all the programming vibes the subject needs but becomes pop when combined with the electric colors and the pop-art-esque dresses designed for the whitepaper. In addition, in order to translate the concept that machine learning can improve the recognition of similar products online, I've designed an animated piece to convey the \"match!\" idea."
+      },
+      "part-5": {
+        "subpart-1": "You can download all of the afore-mentioned whitepapers for free through the links below:",
+        "link": [{
+            "text": "Microservices Architecture as a Large-Scale Refactoring Tool",
+            "url": "https://info.avenuecode.com/microservices-architecture-whitepaper"
+          },
+          {
+            "text": "Mobile Web, Hybrid, or Native: A Roadmap to the Right App",
+            "url": "https://info.avenuecode.com/mobile-whitepaper"
+          },
+          {
+            "text": "Using Machine Learning to Improve Software Engine Search Results",
+            "url": "https://info.avenuecode.com/using-machine-learning-to-improve-software-engine-search-results"
+          }
+        ]
+      }
+    },
+    "tldr": "I've worked as the lead creative designer in the Avenue Code Whitepapers Campaign. Together with its Design and Marketing teams, graphic design pieces were produced using tools such as Sketch, Pages, and Hype."
+  }
+}

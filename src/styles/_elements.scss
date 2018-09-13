@@ -1,11 +1,14 @@
 @import '_settings', '_tools';
 
 :root {
-  @each $name, $value in $colors {
+
+  @each $name,
+  $value in $colors {
     --color-#{$name}: #{$value};
   }
 
-  @each $name, $value in $spacing {
+  @each $name,
+  $value in $spacing {
     --spacing-#{$name}: #{$value};
   }
 }
@@ -59,5 +62,10 @@ a {
 
   &:hover {
     border-bottom: 1px solid color("primary");
+  }
+
+  p & {
+    font-weight: $font-weight-normal;
+    text-transform: none;
   }
 }

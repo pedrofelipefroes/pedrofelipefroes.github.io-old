@@ -1,0 +1,25 @@
+@import '_settings', '_tools';
+
+.o-article {
+  &__content {
+    @include flex-layout($spacing: map-get($spacing, 2));
+  }
+
+  &__header {
+    margin-top: map-get($spacing, 5);
+  }
+
+  &__list {
+    @include flex-layout($spacing: map-get($spacing, 2));
+  }
+
+  &__tags {
+    text-transform: uppercase;
+  }
+
+  &__tldr {
+    border-top: solid 1px color("light-gray");
+    margin-bottom: map-get($spacing, 5);
+    padding-top: map-get($spacing, 4);
+  }
+}
