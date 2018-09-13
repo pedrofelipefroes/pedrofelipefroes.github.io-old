@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		{{> ../src/components/head/head }}
-		
-		<link href="index.css" rel="stylesheet">
-	</head>
-	
-	<body class="c-body">
-		{{> ../src/components/header/header }}
-		{{> ../src/components/card-list/card-list }}
-		{{> ../src/components/footer/footer }}
-	</body>
+
+<head>
+	{{> ../src/partials/head/head }}
+
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body class="c-body">
+	{{> ../src/partials/header/header }}
+	{{> ../src/partials/card-list/card-list }}
+	{{> ../src/partials/footer/footer }}
+
+	{{> ../src/partials/scripts/scripts }}
+</body>
+
 </html>
