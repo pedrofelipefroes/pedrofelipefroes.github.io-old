@@ -1,25 +1,33 @@
 @import '../_settings', '../_tools';
 
 .c-header {
-  @include flex-layout($spacing: map-get($spacing, 4));
+	@include l-flex($spacing: 3);
+	@include l-margin($t: 5, $b: 4);
+	@include l-padding($x: 4);
 
-  margin: map-get($spacing, 5) map-get($spacing, 3) 0;
+	border-bottom: solid 1px color("neutral");
 
-  &__title {
-    @include display-bp {
-      max-width: 36ch;
-    }
-  }
+	&__description br {
+		display: none;
+	}
 
-  &__info {
-    @include flex-layout($spacing: map-get($spacing, 3));
+	&__nav {
+		@include l-flex($direction: column, $spacing: 2);
+		@include l-margin($b: 4);
+	}
 
-    &__name {
-      max-width: 40ch;
-    }
-  }
+	@include l-display-bp {
+		@include l-flex($align: center, $spacing: 3);
+		@include l-padding($x: 3);
 
-  &__contact {
-    @include flex-layout($direction: row, $spacing: map-get($spacing, 3));
-  }
+		text-align: center;
+
+		&__description br {
+			display: initial;
+		}
+
+		&__nav {
+			@include l-flex($direction: row, $spacing: 4);
+		}
+	}
 }

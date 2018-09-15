@@ -1,76 +1,68 @@
-/* 
- * Colors
- */
+/* Colors */
 
-$black: hsl(0, 0%, 0%);
+$gray-050: hsl(0, 0%, 95%);
 $gray-100: hsl(0, 0%, 90%);
+$gray-800: hsl(0, 0%, 20%);
 $white: hsl(0, 0%, 100%);
-$blue: hsl(207, 100%, 50%);
-$colors: ("black": $black,
-"light-gray": $gray-100,
-"primary": $blue,
-"white": $white);
+$blue: hsl(340, 100%, 60%);
 
-/* 
- * Spacing
- */
+$colors: (
+	"primary": $blue,
+	"secondary": $blue,
+	"neutral": $gray-100,
+	"muted": $gray-050,
+	"dark": $gray-800,
+	"light": $white
+);
+
+/* Spacing */
 
 $spacing-base: 5px;
-$spacing: (1: $spacing-base,
-2: $spacing-base*2,
-3: $spacing-base*4,
-4: $spacing-base*8,
-5: $spacing-base*16);
+$spacing: (
+	1: $spacing-base,
+	2: $spacing-base*2,
+	3: $spacing-base*4,
+	4: $spacing-base*8,
+	5: $spacing-base*16
+);
 
-$display-bp: 1024px;
-$display-container-max-width: 1024px;
-$text-readability-max-width: 75ch;
+/* Sizing */
+
+$display-bp: 768px;
+$display-mw: 1024px;
+$text-mw: 80ch;
 
 /*
  * Typography
  */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
-$font-family-body: 'Source Sans Pro',
--apple-system,
-BlinkMacSystemFont,
-sans-serif;
+$font-family-body: "Source Sans Pro", "SF Pro Text", "Helvetica Neue", "Helvetica", sans-serif;
 $font-weight-normal: 400;
-$font-weight-bold: 600;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
 $body-font-family: $font-family-body;
 $body-font-size: 1rem;
 $body-font-weight: $font-weight-normal;
-$body-line-height: 1.875;
+$body-line-height: 1.5;
 
 $h1-font-family: $font-family-body;
-$h1-font-size: 2rem;
+$h1-font-size: 2.25rem;
 $h1-font-weight: $font-weight-bold;
-$h1-line-height: 1.25;
+$h1-line-height: 1;
 
-$h2-font-size: 1.5rem;
+$h2-font-size: 1.875rem;
 $h2-font-weight: $font-weight-bold;
-$h2-line-height: 1.25;
+$h2-line-height: 1.2;
 
 $h3-font-size: 1.25rem;
-$h3-font-weight: $font-weight-bold;
+$h3-font-weight: $font-weight-semibold;
 $h3-line-height: 1.25;
 
-$strong-font-weight: $font-weight-bold;
+$strong-font-weight: $font-weight-semibold;
 
 $small-font-size: .75rem;
-$small-font-weight: $font-weight-bold;
+$small-font-weight: $font-weight-semibold;
 $small-line-height: 1.5;
-
-$link-font-weight: $font-weight-bold;
-$link-text-transform: uppercase;
-
-/*
- * Cards
- */
-
-$card-background-color: map-get($colors, "light-gray");
-$card-border-radius: map-get($spacing, 2);
-$card-min-height: map-get($spacing, 5)*4;
-$card-padding: map-get($spacing, 3);

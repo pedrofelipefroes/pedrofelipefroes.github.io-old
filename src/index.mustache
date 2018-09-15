@@ -11,13 +11,11 @@
 <body class="c-body">
 	<header class="c-header">
 		<h1>I am Froes, Designer and Developer.</h1>
-		<p>Design and code should intertwine to create whatever we imagine.<br />From elaborated graphics to thought-through design systems to practical CSS architectures,<br />I'm an experienced liaison between the design and development mediums.</p>
-		<ul>
+		<p class="c-header__description">Design and code should intertwine to create whatever we imagine. <br />From elaborated graphics to thought-through design systems to practical CSS architectures,<br /> I'm an experienced liaison between the design and development mediums.</p>
+		<ul class="c-header__nav">
 			{{#nav}}
 				<li>
-					<a href="{{url}}">
-						<h3>{{label}}</h3>
-					</a>
+					<h3><a href="{{url}}">{{label}}</a></h3>
 				</li>
 			{{/nav}}
 		</ul>

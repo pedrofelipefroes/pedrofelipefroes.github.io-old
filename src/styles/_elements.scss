@@ -14,7 +14,7 @@
 }
 
 body {
-  color: color("black");
+  color: color("dark");
   font-family: $body-font-family;
   font-size: $body-font-size;
   font-weight: $body-font-weight;
@@ -22,7 +22,7 @@ body {
 }
 
 p {
-  max-width: $text-readability-max-width;
+  max-width: $text-mw;
 }
 
 h1 {
@@ -56,16 +56,9 @@ small {
 
 a {
   color: color("primary");
-  font-weight: $link-font-weight;
   text-decoration: none;
-  text-transform: $link-text-transform;
 
   &:hover {
     border-bottom: 1px solid color("primary");
-  }
-
-  p & {
-    font-weight: $font-weight-normal;
-    text-transform: none;
   }
 }
