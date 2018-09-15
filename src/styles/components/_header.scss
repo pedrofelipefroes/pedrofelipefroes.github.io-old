@@ -2,7 +2,7 @@
 
 .c-header {
 	@include l-flex($spacing: 3);
-	@include l-margin($t: 5, $b: 4);
+	@include l-margin($t: 5);
 	@include l-padding($x: 4);
 
 	border-bottom: solid 1px color("neutral");
@@ -18,7 +18,8 @@
 
 	@include l-display-bp {
 		@include l-flex($align: center, $spacing: 3);
-		@include l-padding($x: 3);
+		@include l-margin($t: 4);
+		@include l-padding($x: 0);
 
 		text-align: center;
 

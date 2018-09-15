@@ -4,11 +4,10 @@ $gray-050: hsl(0, 0%, 95%);
 $gray-100: hsl(0, 0%, 90%);
 $gray-800: hsl(0, 0%, 20%);
 $white: hsl(0, 0%, 100%);
-$blue: hsl(340, 100%, 60%);
+$blue: hsl(200, 80%, 60%);
 
 $colors: (
 	"primary": $blue,
-	"secondary": $blue,
 	"neutral": $gray-100,
 	"muted": $gray-050,
 	"dark": $gray-800,

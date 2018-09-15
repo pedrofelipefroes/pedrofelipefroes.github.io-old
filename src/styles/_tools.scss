@@ -57,7 +57,8 @@
 	}
 }
 
-@mixin l-margin($t: null, $r: null, $b: null, $l: null, $x: null, $y: null) {
+@mixin l-margin($all: null, $t: null, $r: null, $b: null, $l: null, $x: null, $y: null) {
+	@if $all { margin: spacing($all); }
 	@if $t { margin-top: spacing($t); }
 	@if $r { margin-right: spacing($r); }
 	@if $b { margin-bottom: spacing($b); }
@@ -72,7 +73,8 @@
 	}
 }
 
-@mixin l-padding($t: null, $r: null, $b: null, $l: null, $x: null, $y: null) {
+@mixin l-padding($all: null, $t: null, $r: null, $b: null, $l: null, $x: null, $y: null) {
+	@if $all { margin: spacing($all); }
 	@if $t { padding-top: spacing($t); }
 	@if $r { padding-right: spacing($r); }
 	@if $b { padding-bottom: spacing($b); }
