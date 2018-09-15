@@ -2,14 +2,29 @@
 <html lang="en-US">
 
 <head>
-	{{> ../src/partials/head/head }}
-
-	<link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="index.css" />
 </head>
 
 <body class="c-body">
-	{{> ../src/partials/header/header }}
+	<header class="c-header">
+		<h1>I am Froes, Designer and Developer.</h1>
+		<p>Design and code should intertwine to create whatever we imagine.<br />From elaborated graphics to thought-through design systems to practical CSS architectures,<br />I'm an experienced liaison between the design and development mediums.</p>
+		<ul>
+			{{#nav}}
+				<li>
+					<a href="{{url}}">
+						<h3>{{label}}</h3>
+					</a>
+				</li>
+			{{/nav}}
+		</ul>
+	</header>
+
 	{{> ../src/partials/card-list/card-list }}
+
 	{{> ../src/partials/footer/footer }}
 
 	{{> ../src/partials/scripts/scripts }}
