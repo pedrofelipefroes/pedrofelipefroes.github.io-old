@@ -1,7 +1,15 @@
 @import '../_settings', '../_tools';
 
 .c-footer {
-  @include flex-layout($spacing: map-get($spacing, 3));
+  @include l-flex($spacing: 2);
+  @include l-margin($b: 5);
+  @include l-padding($x: 4);
 
-  margin: 0 map-get($spacing, 3) map-get($spacing, 5);
+  &__nav {
+    @include l-flex($direction: row, $spacing: 3);
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+  }
 }
