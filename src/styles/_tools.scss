@@ -4,8 +4,10 @@
 	@return var(--color-#{$name});
 }
 
-@function spacing($name) {
-	@return var(--spacing-#{$name});
+@function spacing($value) {
+	@if $value == auto { @return auto; }
+	@else if $value == 0 { @return 0; }
+	@return var(--spacing-#{$value});
 }
 
 @function spacingList($list...) {
@@ -80,11 +82,11 @@
 	@if $b { padding-bottom: spacing($b); }
 	@if $l { padding-left: spacing($l); }
 	@if $x {
-		margin-left: spacing($x);
-		margin-right: spacing($x);
+		padding-left: spacing($x);
+		padding-right: spacing($x);
 	}
 	@if $y {
-		margin-bottom: spacing($y);
-		margin-top: spacing($y);
+		padding-bottom: spacing($y);
+		padding-top: spacing($y);
 	}
 }

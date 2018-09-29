@@ -5,15 +5,12 @@
 	@include l-margin($t: 5);
 	@include l-padding($x: 4);
 
-	border-bottom: solid 1px color("neutral");
-
 	&__description br {
 		display: none;
 	}
 
 	&__nav {
 		@include l-flex($direction: column, $spacing: 2);
-		@include l-margin($b: 4);
 	}
 
 	@include l-display-bp {

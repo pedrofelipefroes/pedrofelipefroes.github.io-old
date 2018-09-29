@@ -3,4 +3,8 @@
 .c-body {
   @include l-display-mw;
 	@include l-flex($justify: center, $spacing: 4);
+
+	@include l-display-bp {
+		@include l-padding($x: 3);
+	}
 }

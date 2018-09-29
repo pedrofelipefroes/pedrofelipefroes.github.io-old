@@ -19,8 +19,17 @@
 			{{/nav}}
 		</ul>
 	</header>
-
-	{{> ../src/partials/card-list/card-list }}
+	<main class="c-card-list">
+		{{#card-list}}
+			<a href="{{url}}" class="c-card">
+				<figure class="c-card__thumbnail" style="background-image: url({{thumbnail}});"></figure>
+				<figcaption class="c-card__title">
+					<small>{{category}}</small>
+					<p><strong>{{name}}</strong></p>
+				</figcaption>
+			</a>
+		{{/card-list}}
+	</main>
 
 	{{> ../src/partials/footer/footer }}
 </body>
