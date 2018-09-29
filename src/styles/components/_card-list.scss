@@ -14,11 +14,17 @@
 		text-transform: none;
 
 		&:hover {
-      border-bottom: unset;
+			border-bottom: unset;
+			
+			.c-card__thumbnail {
+				background-size: 125%;
+				box-shadow: 0 spacing(2) spacing(3) 0 hsla(0, 0%, 0%, .4);
+			}
 		}
 
 		&:active, &:focus {
 			.c-card__thumbnail {
+				background-size: 100%;
 				box-shadow: 0 spacing(1) spacing(2) 0 hsla(0, 0%, 0%, .4);
 			}
 		}
@@ -33,11 +39,6 @@
 				border-radius: spacing(1);
 				box-shadow: 0 spacing(1) spacing(2) 0 hsla(0, 0%, 0%, .2);
 			}
-		}
-
-		&__thumbnail:hover {
-			background-size: 125%;
-			box-shadow: 0 spacing(2) spacing(3) 0 hsla(0, 0%, 0%, .4);
 		}
 
 		&__title {
