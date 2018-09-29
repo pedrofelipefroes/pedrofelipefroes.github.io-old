@@ -51,12 +51,5 @@
 		&__title p {
 			line-height: 1.15;
 		}
-
-		&__title small {
-			color: hsl(0, 0%, 70%);
-			font-weight: $font-weight-semibold;
-			line-height: 1;
-			text-transform: uppercase;
-		}
   }
 }

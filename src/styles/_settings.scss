@@ -2,12 +2,14 @@
 
 $gray-050: hsl(0, 0%, 95%);
 $gray-100: hsl(0, 0%, 90%);
+$gray-300: hsl(0, 0%, 70%);
 $gray-800: hsl(0, 0%, 20%);
 $white: hsl(0, 0%, 100%);
 $blue: hsl(200, 80%, 60%);
 
 $colors: (
 	"primary": $blue,
+	"secondary": $gray-300, 
 	"neutral": $gray-100,
 	"muted": $gray-050,
 	"dark": $gray-800,
@@ -59,6 +61,8 @@ $h2-line-height: 1.2;
 $h3-font-size: 1.25rem;
 $h3-font-weight: $font-weight-semibold;
 $h3-line-height: 1.25;
+
+$em-font-style: italic;
 
 $strong-font-weight: $font-weight-semibold;
 

@@ -44,6 +44,10 @@ h3 {
   line-height: $h3-line-height;
 }
 
+em {
+  font-style: $em-font-style;
+}
+
 strong {
   font-weight: $strong-font-weight;
 }
@@ -60,4 +64,10 @@ a {
   &:hover {
     border-bottom: 1px solid color("primary");
   }
+}
+
+figcaption {
+  color: color("secondary");
+  font-size: $small-font-size;
+  line-height: $small-line-height;
 }
