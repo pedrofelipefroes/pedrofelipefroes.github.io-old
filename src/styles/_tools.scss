@@ -29,7 +29,7 @@
 	max-width: $display-mw;
 }
 
-@mixin l-flex($align: null, $justify: null, $direction: column, $spacing: spacing(3)) {
+@mixin l-flex($align: null, $justify: null, $direction: column, $spacing: 3) {
 	display: flex;
 	flex-direction: $direction;
 

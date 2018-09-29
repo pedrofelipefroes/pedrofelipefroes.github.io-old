@@ -1,9 +1,10 @@
 {
 	"avenue-code-whitepapers-campaign": {
 		"title": "Avenue Code Whitepapers Campaign",
-		"tags": "Publication Design, Marketing & Advertising Design, Motion Design",
+		"tags": "Publication Design • Marketing & Advertising Design • Motion Design",
 		"content": {
-			"links": [{
+			"links": [
+				{
 					"text": "Microservices Architecture as a Large-Scale Refactoring Tool",
 					"url": "https://info.avenuecode.com/microservices-architecture-whitepaper"
 				},
@@ -17,6 +18,6 @@
 				}
 			]
 		},
-		"tldr": "I've worked as the lead creative designer in the Avenue Code Whitepapers Campaign. Together with its Design and Marketing teams, graphic design pieces were produced using tools such as Sketch, Pages, and Hype."
+		"tldr": "I've worked as the lead creative designer in the Avenue Code Whitepapers Campaign. Together with its Design and Marketing teams, graphic design pieces were produced using tools such as Sketch, Pages, and Hype. Check out the articles throught the following links:"
 	}
 }
