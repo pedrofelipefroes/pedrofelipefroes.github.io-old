@@ -1,7 +1,7 @@
 @import '../_settings', '../_tools';
 
 .c-footer {
-  @include l-flex($spacing: 2);
+  @include l-flex($align: center, $spacing: 2);
   @include l-margin($b: 5);
   @include l-padding($x: 4);
 
@@ -9,7 +9,7 @@
     @include l-flex($direction: row, $spacing: 3);
   }
 
-  &__copyright {
-    text-transform: uppercase;
+  &__info {
+    @include l-flex($align: center, $spacing: 0);
   }
 }
