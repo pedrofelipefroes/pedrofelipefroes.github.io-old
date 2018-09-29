@@ -18,7 +18,6 @@
 
 	@include l-display-bp {
 		@include l-flex($align: center, $spacing: 3);
-		@include l-margin($t: 4);
 		@include l-padding($x: 0);
 
 		text-align: center;

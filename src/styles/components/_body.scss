@@ -2,9 +2,5 @@
 
 .c-body {
   @include l-display-mw;
-	@include l-flex($spacing: 4);
-
-	@include l-display-bp {
-		@include l-padding($x: 3, $y: 4);
-	}
+	@include l-flex($justify: center, $spacing: 4);
 }
