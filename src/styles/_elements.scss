@@ -67,6 +67,8 @@ a {
 }
 
 figcaption {
+  @include l-padding($t: 2);
+  
   color: color("secondary");
   font-size: $small-font-size;
   line-height: $small-line-height;

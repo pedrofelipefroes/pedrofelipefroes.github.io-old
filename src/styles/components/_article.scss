@@ -7,22 +7,33 @@
 		@include l-flex($align: center, $spacing: 5);
 
 		&__img {
+			background-position: center;
 			background-size: cover;
-			width: 100%;
+			width: 100vw;
+			height: 50vh;
 		}
 
 		&__title {
 			@include l-flex($spacing: 2);
-			@include l-padding($x: 4);
+			@include l-margin($l: 4);
+			align-self: flex-start;
 
 			@include l-display-bp {
+				@include l-margin($l: 0);
+				@include l-padding($x: 4);
 				@include l-flex($align: center, $spacing: 2);
+
+				align-self: initial;
 			}
 		}
 	}
 
 	&__content {
 		@include l-flex();
+
+		figcaption {
+			max-width: 80ch;
+		}
 
 		p, small, figcaption {
 			@include l-padding($x: 4);

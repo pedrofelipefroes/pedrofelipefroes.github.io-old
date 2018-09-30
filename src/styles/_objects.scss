@@ -12,5 +12,41 @@
 }
 
 .o-text-img-link {
-	@include l-flex($spacing: 1);
+	@include l-flex($spacing: 3);
+
+	img {
+		display: block;
+		width: 100%;
+
+		@include l-display-bp {
+			border-radius: spacing(1);
+			max-width: calc(80ch + 80px);
+		}
+	}
+}
+
+.o-tool-list {
+	@include l-flex($direction: row, $spacing: 2);
+
+	&__item {
+		@include l-flex($align: center, $spacing: 0);
+
+		img {
+			background-color: color("muted");
+			border-radius: spacing(1);
+			height: spacing(3);
+			padding: spacing(1);
+			width: spacing(3);
+		}
+
+		small {
+			margin-top: 30px;
+			position: absolute;
+			visibility: hidden;
+		}
+
+		&:hover small {
+			visibility: initial;
+		}
+	}
 }
