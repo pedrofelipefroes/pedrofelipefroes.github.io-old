@@ -1,4 +1,12 @@
 {
+	"index": {
+		"title": "Froes, Designer and Developer – Portfolio",
+		"url": "https://pedrofelipefroes.github.io",
+		"stylesheet": {
+			"index": "",
+			"view": "../../index.css"
+		}
+	},
 	"nav": [
 		{
 			"label": "LinkedIn",
