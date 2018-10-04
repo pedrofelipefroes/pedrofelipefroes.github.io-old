@@ -83,7 +83,12 @@
 				<ul class="o-list">
 					{{#links}}
 						<li>
-							<p><a href="{{url}}">{{text}}</a></p>
+							<p>
+								<a href="{{url}}">
+									{{text}}
+									{{> ../../../src/img/icon/external-link.svg }}
+								</a>
+							</p>
 						</li>
 					{{/links}}
 				</ul>

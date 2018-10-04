@@ -62,7 +62,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    border-bottom: 1px solid color("primary");
+    text-decoration: underline;
   }
 }
 
