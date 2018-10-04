@@ -13,17 +13,17 @@
 			"url": "https://www.linkedin.com/in/pedrofelipefroes/"
 		},
 		{
-			"label": "Mail",
-			"url": "mailto:pedrofelipefroes@gmail.com"
-		},
-		{
 			"label": "Resumé",
 			"url": "https://www.dropbox.com/s/z97a2df0tq0tadw/UI-UX%20Developer%20%E2%80%93%20Pedro%20Felipe%20Froes.pdf?dl=0"
+		},
+		{
+			"label": "Mail Me",
+			"url": "mailto:froes.designer.developer@gmail.com"
 		}
 	],
 	"card-list": [
 		{
-			"name": "Avenue Code Whitepapers Campaign",
+			"name": "Avenue Code Whitepapers Campaign Campaign",
 			"tags": "Publication • Marketing & Advertising • Motion",
 			"url": "work/avenue-code-whitepapers-campaign/avenue-code-whitepapers-campaign.html",
 			"thumbnail": "work/avenue-code-whitepapers-campaign/thumbnail.jpg"

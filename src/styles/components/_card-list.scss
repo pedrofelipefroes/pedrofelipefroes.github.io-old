@@ -16,9 +16,11 @@
 		&:hover {
 			border-bottom: unset;
 			
-			.c-card__thumbnail {
-				background-size: 125%;
-				box-shadow: 0 spacing(2) spacing(3) 0 hsla(0, 0%, 0%, .4);
+			@include l-display-bp {
+				.c-card__thumbnail {
+					background-size: 125%;
+					box-shadow: 0 spacing(2) spacing(3) 0 hsla(0, 0%, 0%, .4);
+				}
 			}
 		}
 
@@ -43,6 +45,7 @@
 
 		&__title {
 			@include l-padding($x: 4, $y: 2);
+			line-height: 1;
 
 			@include l-display-bp {
 				@include l-padding($x: 2);
