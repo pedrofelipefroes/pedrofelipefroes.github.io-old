@@ -1,5 +1,9 @@
 @import '_settings', '_tools';
 
+.o-icon {
+	margin-bottom: -3px;
+}
+
 .o-list {
 	@include l-flex($spacing: 2);
 }

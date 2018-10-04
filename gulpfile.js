@@ -11,7 +11,7 @@ const sass = require("gulp-sass");
 
 gulp.task("clean", function() {
 	return gulp
-		.src(["build/", "work/", "*.html", "*.css"], {
+		.src(["build/", "work/", "img/", "*.html", "*.css"], {
 			allowEmpty: true,
 			read: false
 		})
@@ -52,6 +52,17 @@ gulp.task("serve-index", function() {
 });
 
 gulp.task("serve-img", function() {
+	return gulp
+		.src(["src/img/**/*"])
+		.pipe(
+			flatten({
+				includeParents: -1
+			})
+		)
+		.pipe(gulp.dest("img"));
+});
+
+gulp.task("serve-views-img", function() {
 	return gulp
 		.src([
 			"src/views/**/*.jpg",
@@ -105,6 +116,7 @@ const build = gulp.parallel("compile-mustache", "compile-sass");
 const serve = gulp.parallel(
 	"serve-index",
 	"serve-img",
+	"serve-views-img",
 	"serve-views",
 	"serve-json"
 );
