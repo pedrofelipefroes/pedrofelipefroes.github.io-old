@@ -15,46 +15,45 @@
 
 body {
   color: color("dark");
-  font-family: $body-font-family;
-  font-size: $body-font-size;
-  font-weight: $body-font-weight;
-  line-height: $body-line-height;
+  font-family: $text-family;
 }
 
 p {
+  font-size: $body-size;
+  font-weight: $body-weight;
+  line-height: $body-leading;
   max-width: $text-mw;
 }
 
 h1 {
-  font-family: $h1-font-family;
-  font-size: $h1-font-size;
-  font-weight: $h1-font-weight;
-  line-height: $h1-line-height;
+  font-size: $large-title-size;
+  font-weight: $large-title-weight;
+  line-height: $large-title-1-leading;
 }
 
 h2 {
-  font-size: $h2-font-size;
-  font-weight: $h2-font-weight;
-  line-height: $h2-line-height;
+  font-size: $title-1-size;
+  font-weight: $title-1-weight;
+  line-height: $title-1-leading;
 }
 
 h3 {
-  font-size: $h3-font-size;
-  font-weight: $h3-font-weight;
-  line-height: $h3-line-height;
+  font-size: $title-2-size;
+  font-weight: $title-2-weight;
+  line-height: $title-2-leading;
 }
 
 em {
-  font-style: $em-font-style;
+  font-style: $emphasis-style;
 }
 
 strong {
-  font-weight: $strong-font-weight;
+  font-weight: $strong-weight;
 }
 
 small {
-  font-size: $small-font-size;
-  line-height: $small-line-height;
+  font-size: $caption-size;
+  line-height: $caption-leading;
 }
 
 a {
@@ -70,6 +69,6 @@ figcaption {
   @include l-padding($t: 2);
   
   color: color("secondary");
-  font-size: $small-font-size;
-  line-height: $small-line-height;
+  font-size: $caption-size;
+  line-height: $caption-leading;
 }

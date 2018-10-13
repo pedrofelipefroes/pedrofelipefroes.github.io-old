@@ -10,11 +10,12 @@
 
 		border-radius: spacing(1);
 		color: color("dark");
-		min-height: 400px;
+		min-height: map-get($spacing, 5) * 3;
 		text-transform: none;
 
 		&:hover {
 			border-bottom: unset;
+			text-decoration: none;
 			
 			@include l-display-bp {
 				.c-card__thumbnail {
@@ -27,7 +28,7 @@
 		&:active, &:focus {
 			.c-card__thumbnail {
 				background-size: 100%;
-				box-shadow: 0 spacing(1) spacing(2) 0 hsla(0, 0%, 0%, .4);
+				box-shadow: none;
 			}
 		}
 		
@@ -35,25 +36,15 @@
 			background-position: center;
 			background-size: 100%;
 			flex-grow: 1;
-			transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
-
-			@include l-display-bp {
-				border-radius: spacing(1);
-				box-shadow: 0 spacing(1) spacing(2) 0 hsla(0, 0%, 0%, .2);
-			}
+			transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
 		}
 
 		&__title {
 			@include l-padding($x: 4, $y: 2);
-			line-height: 1;
 
 			@include l-display-bp {
-				@include l-padding($x: 2);
+				@include l-padding($x: 0);
 			}
-		}
-
-		&__title p {
-			line-height: 1.15;
 		}
   }
 }

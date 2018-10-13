@@ -18,7 +18,7 @@ $colors: (
 
 /* Spacing */
 
-$spacing-base: 5px;
+$spacing-base: 8px;
 $spacing: (
 	1: $spacing-base,
 	2: $spacing-base*2,
@@ -39,32 +39,30 @@ $text-mw: 80ch;
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
-$font-family-body: "Source Sans Pro", "SF Pro Text", "Helvetica Neue", "Helvetica", sans-serif;
-$font-weight-normal: 400;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+$text-family: "Source Sans Pro", "SF Pro Text", "Helvetica Neue", "Helvetica", sans-serif;
+$text-weight-normal: 400;
+$text-weight-semibold: 600;
+$text-weight-bold: 700;
 
-$body-font-family: $font-family-body;
-$body-font-size: 1rem;
-$body-font-weight: $font-weight-normal;
-$body-line-height: 1.5;
+$body-size: 1rem;
+$body-weight: $text-weight-normal;
+$body-leading: 1.5;
 
-$h1-font-family: $font-family-body;
-$h1-font-size: 2.25rem;
-$h1-font-weight: $font-weight-bold;
-$h1-line-height: 1;
+$large-title-size: 2.75rem;
+$large-title-weight: $text-weight-bold;
+$large-title-1-leading: 1.0909090909;
 
-$h2-font-size: 1.875rem;
-$h2-font-weight: $font-weight-bold;
-$h2-line-height: 1.2;
+$title-1-size: 1.75rem;
+$title-1-weight: $text-weight-bold;
+$title-1-leading: 1.1428571429;
 
-$h3-font-size: 1.25rem;
-$h3-font-weight: $font-weight-semibold;
-$h3-line-height: 1.25;
+$title-2-size: 1.25rem;
+$title-2-weight: $text-weight-semibold;
+$title-2-leading: 1.25;
 
-$em-font-style: italic;
+$emphasis-style: italic;
 
-$strong-font-weight: $font-weight-semibold;
+$strong-weight: $text-weight-semibold;
 
-$small-font-size: .75rem;
-$small-line-height: 1.5;
+$caption-size: .75rem;
+$caption-leading: 1rem;
