@@ -10,7 +10,6 @@
 
 		border-radius: spacing(1);
 		color: color("dark");
-		min-height: map-get($spacing, 5) * 3;
 		text-transform: none;
 
 		&:hover {
@@ -36,11 +35,12 @@
 			background-position: center;
 			background-size: 100%;
 			flex-grow: 1;
+			min-height: map-get($spacing, 5) * 3;
 			transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
 		}
 
 		&__title {
-			@include l-padding($x: 4, $y: 2);
+			@include l-padding($x: 3, $y: 2);
 
 			@include l-display-bp {
 				@include l-padding($x: 0);
