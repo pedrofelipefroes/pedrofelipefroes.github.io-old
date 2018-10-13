@@ -5,7 +5,8 @@
 		"stylesheet": {
 			"index": "",
 			"view": "../../index.css"
-		}
+		},
+		"back-to-home": "Back to Home"
 	},
 	"nav": [
 		{
@@ -23,8 +24,8 @@
 	],
 	"card-list": [
 		{
-			"name": "Avenue Code Whitepapers Campaign Campaign",
-			"tags": "Publication • Marketing & Advertising • Motion",
+			"name": "IT Digital Publications",
+			"tags": "Publication & Advertising",
 			"url": "work/avenue-code-whitepapers-campaign/avenue-code-whitepapers-campaign.html",
 			"thumbnail": "work/avenue-code-whitepapers-campaign/thumbnail.jpg"
 		}
