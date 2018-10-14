@@ -6,9 +6,9 @@
 	top: spacing(2);
 
 	@include l-display-bp {
-		@include l-margin($r: 2);
+		@include l-padding($l: 2);
 
-		align-self: flex-end;
+		align-self: flex-start;
 		position: -webkit-sticky;
 		position: sticky;
 	}
@@ -25,7 +25,6 @@
 
 			@include l-display-bp {
 				display: initial;
-				border-radius: 4px;
 			}
 		}
 	}
