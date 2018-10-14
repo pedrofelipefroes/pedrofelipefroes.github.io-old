@@ -1,0 +1,32 @@
+@import '../_settings', '../_tools';
+
+.c-navbar {
+	position: fixed;
+	right: spacing(2);
+	top: spacing(2);
+
+	@include l-display-bp {
+		@include l-margin($r: 2);
+
+		align-self: flex-end;
+		position: -webkit-sticky;
+		position: sticky;
+	}
+
+	&__icon {
+		&--display-sm {
+			@include l-display-bp {
+				display: none;
+			};
+		}
+
+		&--display-bp {
+			display: none;
+
+			@include l-display-bp {
+				display: initial;
+				border-radius: 4px;
+			}
+		}
+	}
+}

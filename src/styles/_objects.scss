@@ -1,7 +1,21 @@
 @import '_settings', '_tools';
 
 .o-icon {
-	margin-bottom: -3px;
+	background-color: color("muted");
+	border-radius: 50%;
+	height: spacing(2);
+	fill: none;
+	padding: map-get($spacing, 1) / 2;
+	stroke: color("primary");
+	stroke-linecap: square;
+	stroke-width: 2;
+	transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+	width: spacing(2);
+
+	&:hover {
+		background-color: color("primary");
+		stroke: color("light");
+	}
 }
 
 .o-list {
