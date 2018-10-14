@@ -1,49 +1,67 @@
 @import '../_settings', '../_tools';
 
 .c-article {
-	@include l-flex($align: center, $spacing: 4);
+	@include l-flex($align: center, $spacing: 2);
+
+	box-sizing: border-box;
+	width: 100%;
+
+	@include l-display-bp {
+		@include l-padding($x: 4);
+	}
+
+	&__hero-img {
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100vw;
+		height: map-get($spacing, 5) * 3;
+	}
+
+	&__description {
+		@include l-flex();
+		@include l-padding($x: 3);
+
+		box-sizing: border-box;
+		max-width: $display-mw;
+		width: 100%;
+
+		@include l-display-bp {
+			@include l-flex($justify: space-between, $direction: row, $spacing: 4);
+			@include l-padding($x: 0);
+		}
+	}
 
 	&__header {
-		@include l-flex($align: center, $spacing: 5);
+		@include l-flex($spacing: 1);
+	}
 
-		&__img {
-			background-position: center;
-			background-size: cover;
-			width: 100vw;
-			height: 50vh;
+	&__text {
+		@include l-flex($spacing: 2);
+
+		p {
+			font-size: $article-size;
 		}
+	}
 
-		&__title {
-			@include l-flex($spacing: 2);
-			@include l-margin($l: 4);
-			align-self: flex-start;
+	&__links {
+		@include l-flex($spacing: 1);
 
-			@include l-display-bp {
-				@include l-margin($l: 0);
-				@include l-padding($x: 4);
-				@include l-flex($align: center, $spacing: 2);
+		p {
+			font-size: $article-size;
+		}
+	}
 
-				align-self: initial;
+	&__img-list {
+		@include l-flex($align: center);
+
+		&__item {
+			@include l-flex($spacing: 1);
+			max-width: $display-mw;
+			
+			img {
+				width: 100%;
 			}
 		}
-	}
-
-	&__content {
-		@include l-flex();
-
-		figcaption {
-			max-width: 80ch;
-		}
-
-		p, small, figcaption {
-			@include l-padding($x: 4);
-		}
-	}
-
-	&__tldr {
-		@include l-flex($spacing: 2);
-		@include l-padding($x: 4, $y: 4);
-
-		border-top: solid 1px color("muted");
 	}
 }
