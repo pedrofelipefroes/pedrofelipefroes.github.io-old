@@ -6,7 +6,7 @@ $box-sides: top right bottom left;
   .u-m-#{$side} {
     @for $i from 0 through length($spacing) {
       &--#{$i} {
-        margin-#{$side}: spacing(#{$i});
+        margin-#{$side}: spacing(#{$i}) !important;
       }
     }
   }
@@ -14,7 +14,7 @@ $box-sides: top right bottom left;
   .u-p-#{$side} {
     @for $i from 0 through length($spacing) {
       &--#{$i} {
-        padding-#{$side}: spacing(#{$i});
+        padding-#{$side}: spacing(#{$i}) !important;
       }
     }
   }

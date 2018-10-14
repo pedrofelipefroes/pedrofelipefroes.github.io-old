@@ -34,7 +34,7 @@
 	&--article {
 		height: $article-size;
 		stroke: color("primary");
-		vertical-align: sub;
+		vertical-align: middle;
 		width: $article-size;
 	}
 }
