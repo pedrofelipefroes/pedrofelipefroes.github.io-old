@@ -1,0 +1,9 @@
+@import '../_settings', '../_tools';
+
+.c-view {
+	@include l-flex($align: center, $spacing: 3);
+
+	@include l-display-bp {
+		@include l-flex($align: center, $spacing: 2);
+	}
+}

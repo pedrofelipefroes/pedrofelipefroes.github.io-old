@@ -29,8 +29,8 @@ $spacing: (
 
 /* Sizing */
 
-$display-bp: 768px;
-$display-mw: 1286px;
+$display-bp: 1024px;
+$display-mw: 1302px;
 $text-mw: 80ch;
 
 /*
@@ -66,3 +66,5 @@ $strong-weight: $text-weight-semibold;
 
 $caption-size: .75rem;
 $caption-leading: 1rem;
+
+$article-size: .875rem;
