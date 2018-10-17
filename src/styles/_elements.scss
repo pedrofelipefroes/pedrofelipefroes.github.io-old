@@ -66,9 +66,10 @@ a {
 }
 
 figcaption {
-  @include l-padding($t: 2);
+  @include l-padding($x: 3);
   
   color: color("secondary");
   font-size: $caption-size;
   line-height: $caption-leading;
+  max-width: 160ch;
 }
