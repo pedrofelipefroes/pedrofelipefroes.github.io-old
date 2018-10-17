@@ -1,0 +1,68 @@
+{
+	"it-digital-publications": {
+		"header": {
+			"img": "header.jpg",
+			"title": "IT Digital Publications",
+			"tags": "Publication & Advertising Design",
+			"client": "Avenue Code",
+			"year": "2017—2018",
+			"tools": "Sketch, Photoshop, Apple Pages & CSS"
+		},
+		"text": [
+			"Avenue Code is an IT consulting agency which stands for sharing knowledge as a way to promote professional growth. The company releases digital publications written by its consultants from time to time, and its Design and Marketing teams come together to create visuals and promote them. As a member of both teams, I was deeply involved with the development of a creative concept, setting the layout, and designing ad pieces for each publication released.",
+			"Translating software development concepts into graphic metaphors can be a challenging task. Thankfully, a combination of teamwork and my Computer Engineering background assisted on the creation of the artwork and ad pieces for the three digital publications presented below. You can download them for free through the following links:"
+		],
+		"links": [
+			{
+				"text": "Microservices Architecture as a Large-Scale Refactoring Tool",
+				"url": "https://info.avenuecode.com/microservices-architecture-whitepaper"
+			},
+			{
+				"text": "Mobile Web, Hybrid, or Native: A Roadmap to the Right App",
+				"url": "https://info.avenuecode.com/mobile-whitepaper"
+			},
+			{
+				"text": "Using Machine Learning to Improve Software Engine Search Results",
+				"url": "https://info.avenuecode.com/using-machine-learning-to-improve-software-engine-search-results"
+			}
+		],
+		"img-list": [
+			{
+				"alt": "\"Microservices Architecture as a Large-Scale Refactoring Tool\" Digital Publication, by Froes, Designer and Developer",
+				"url": "microservices-1.jpg"
+			},
+			{
+				"alt": "\"Microservices Architecture as a Large-Scale Refactoring Tool\" Graphic, by Froes, Designer and Developer",
+				"url": "microservices-2.jpg",
+				"caption": "In order to translate such IT concept as microservices refactoring into graphics, we've decided to go for a major, larger asteroids disintegrating into several minor ones; the space-themed metaphor was an ode to the publication author's love for astronomy."
+			},
+			{
+				"alt": "\"Mobile Web, Hybrid, or Native: A Roadmap to the Right App\" Digital Publication, by Froes, Designer and Developer",
+				"url": "mobile-1.jpg"
+			},
+			{
+				"alt": "\"Mobile Web, Hybrid, or Native: A Roadmap to the Right App\" Graphic, by Froes, Designer and Developer",
+				"url": "mobile-2.jpg",
+				"caption": "For \"Mobile Web, Hybrid, or Native: A Roadmap to the Right App,\" we wanted to do something actual and trendy at the time, so I've created some isometric iPhone X models and played with color gel gradients around them."
+			},
+			{
+				"alt": "\"Mobile Web, Hybrid, or Native: A Roadmap to the Right App\" Ad, by Froes, Designer and Developer",
+				"url": "mobile-3.jpg"
+			},
+			{
+				"alt": "\"Machine Learning to Improve Software Engine Search Results\" Digital Publication, by Froes, Designer and Developer",
+				"url": "machine-learning-1.jpg",
+				"caption": "Typography played a big role in \"Machine Learning to Improve Software Engine Search Results\" in order to present machine learning as a more tangible subject. The monospaced font Source Code Pro conveys the subject coding vibes, but also pops out when combined with the electric colors and the pop-art-esque dresses designed for the digital publication."
+			},
+			{
+				"alt": "\"Machine Learning to Improve Software Engine Search Results\" Graphic, by Froes, Designer and Developer",
+				"url": "machine-learning-2.jpg"
+			},
+			{
+				"alt": "\"Machine Learning to Improve Software Engine Search Results\" Animated Ad, by Froes, Designer and Developer",
+				"url": "machine-learning-3.gif",
+				"caption": "Since the digital publication touched into how machine learning can improve the recognition of similar products online, I've designed an animated ad piece to convey the \"match!\" idea."
+			}
+		]
+	}
+}
