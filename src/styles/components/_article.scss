@@ -63,6 +63,7 @@
 
 	&__img-list {
 		@include l-flex($align: center);
+		@include l-margin($t: 3);
 
 		&__item {
 			@include l-flex($spacing: 1);
