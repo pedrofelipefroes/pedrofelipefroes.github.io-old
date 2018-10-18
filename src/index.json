@@ -6,6 +6,11 @@
 			"index": "",
 			"view": "../../index.css"
 		},
+		"og": {
+			"title": "Portfolio — Froes, Designer and Developer",
+			"description": "",
+			"img": "https://pedrofelipefroes.github.io/img/froes-designer-developer-portfolio.jpg"
+		},
 		"back-to-home": "Back to Home"
 	},
 	"nav": [
