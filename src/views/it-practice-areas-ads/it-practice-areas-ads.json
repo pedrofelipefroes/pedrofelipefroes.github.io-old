@@ -1,0 +1,53 @@
+{
+	"it-practice-areas-ads": {
+		"header": {
+			"img": "header.jpg",
+			"title": "IT Practice Areas Ads",
+			"tags": "Publication & Advertising Design",
+			"client": "Avenue Code",
+			"year": "2017",
+			"tools": "Sketch"
+		},
+		"text": [
+			"Avenue Code is an IT consulting company which offers a wide range of solutions, and one of its earliest social media campaigns reflected just that. The Marketing Team selected six of the company’s practice areas—mobile development, agile coaching, frontend dev., backend dev., quality assurance, and service integration—and wanted stylish icons to go along a copy for each one of them.",
+			"Each of the six areas had its IT concept translated into an icon accompanied by the company logo. The neon colors followed the company branding and provided the cool, stylish feel the Marketing Team wanted. Since the campaign was primarily aimed at a Facebook carousel ad, connecting each icon gave a sense of continuity between the areas, and also represented how intertwined Avenue Code perceives them."
+		],
+		"links": [
+			{
+				"text": "facebook.com/avenuecode",
+				"url": "https://www.facebook.com/avenuecode"
+			}
+		],
+		"img-list": [
+			{
+				"alt": "IT Practice Areas Ads' Compilation, by Froes, Designer and Developer",
+				"url": "compilation.png",
+				"caption": "Ads were experienced one after another through Facebook carousel ads, giving a feeling of continuity and connection between the practice areas."
+			},
+			{
+				"alt": "IT Practice Areas Ads' Mobile Development Graphic, by Froes, Designer and Developer",
+				"url": "mobile-development.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Agile Coaching Graphic, by Froes, Designer and Developer",
+				"url": "agile-coaching.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Frontend Development Graphic, by Froes, Designer and Developer",
+				"url": "frontend-development.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Backend Development Graphic, by Froes, Designer and Developer",
+				"url": "backend-development.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Quality Assurance Graphic, by Froes, Designer and Developer",
+				"url": "quality-assurance.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Service Integration Graphic, by Froes, Designer and Developer",
+				"url": "service-integration.jpg"
+			}
+		]
+	}
+}
