@@ -8,8 +8,14 @@
 		},
 		"og": {
 			"title": "Portfolio — Froes, Designer and Developer",
-			"description": "",
-			"img": "https://pedrofelipefroes.github.io/img/froes-designer-developer-portfolio.jpg"
+			"description": "From Visual Design to UX & UI Design, Design Systems, CSS Architecture, and UI & UX Frontend Development.",
+			"img": {
+				"main": "http://pedrofelipefroes.github.io/img/froes-designer-developer-portfolio.jpg",
+				"secure_url": "https://pedrofelipefroes.github.io/img/froes-designer-developer-portfolio.jpg",
+				"type": "image/jpeg",
+				"width": "1200",
+				"height": "628"
+			}
 		},
 		"back-to-home": "Back to Home"
 	},
