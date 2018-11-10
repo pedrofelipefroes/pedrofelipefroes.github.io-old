@@ -16,6 +16,11 @@
 		background-size: cover;
 		width: 100vw;
 		height: map-get($spacing, 5) * 3;
+
+		@include l-display-bp {
+			background-attachment: fixed;
+			background-size: 100%;
+		}
 	}
 
 	&__description {
