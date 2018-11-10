@@ -35,6 +35,12 @@
 	],
 	"card-list": [
 		{
+			"name": "PTO Scheduler Web App",
+			"tags": "Interaction Design",
+			"url": "work/pto-scheduler-web-app/pto-scheduler-web-app.html",
+			"thumbnail": "work/pto-scheduler-web-app/thumbnail.jpg"
+		},
+		{
 			"name": "IT Digital Publications",
 			"tags": "Publication & Advertising Design",
 			"url": "work/it-digital-publications/it-digital-publications.html",
