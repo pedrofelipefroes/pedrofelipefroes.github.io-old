@@ -37,6 +37,14 @@
 		vertical-align: middle;
 		width: $article-size;
 	}
+
+	&--nav {
+		height: spacing(2);
+		stroke: color("primary");
+		margin-bottom: -2px;
+		margin-right: 4px;
+		width: spacing(2);
+	}
 }
 
 .o-list {

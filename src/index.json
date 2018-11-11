@@ -19,20 +19,6 @@
 		},
 		"back-to-home": "Back to Home"
 	},
-	"nav": [
-		{
-			"label": "LinkedIn",
-			"url": "https://www.linkedin.com/in/pedrofelipefroes/"
-		},
-		{
-			"label": "Resumé",
-			"url": "https://www.dropbox.com/s/z97a2df0tq0tadw/UI-UX%20Developer%20%E2%80%93%20Pedro%20Felipe%20Froes.pdf?dl=0"
-		},
-		{
-			"label": "Mail Me",
-			"url": "mailto:froes.designer.developer@gmail.com"
-		}
-	],
 	"card-list": [
 		{
 			"name": "PTO Scheduler Web App",
