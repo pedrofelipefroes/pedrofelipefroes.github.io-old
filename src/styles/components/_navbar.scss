@@ -13,6 +13,25 @@
 		position: sticky;
 	}
 
+	&__icon-list {
+		display: none;
+
+		@include l-display-bp {
+			@include l-flex($spacing: 1);
+			@include l-margin($t: 2);
+
+			position: absolute;
+		};
+
+		.o-icon {
+			z-index: 10;
+		}
+
+		.o-icon:hover + .c-navbar__icon__legend {
+			right: -136px;
+		}
+	}
+
 	&__icon {
 		&--display-sm {
 			@include l-display-bp {
@@ -20,12 +39,16 @@
 			};
 		}
 
-		&--display-bp {
-			display: none;
+		&__legend {
+			@include l-padding($l: 4, $y: 1);
 
-			@include l-display-bp {
-				display: initial;
-			}
+			background-color: color("dark");
+			color: color("light");
+			right: 48px;
+			position: absolute;
+			transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+			width: 120px;
+			z-index: -10;
 		}
 	}
 }
