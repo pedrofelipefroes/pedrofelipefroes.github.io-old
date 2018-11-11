@@ -28,7 +28,15 @@
 		}
 
 		.o-icon:hover + .c-navbar__icon__legend {
-			right: -136px;
+			right: -128px;
+		}
+
+		&__item:hover .o-icon {
+			stroke: color("primary");
+		}
+
+		&__item:hover .c-navbar__icon__legend {
+			right: -128px;
 		}
 	}
 
@@ -40,12 +48,15 @@
 		}
 
 		&__legend {
+			@include l-flex($direction: row, $spacing: 2);
 			@include l-padding($l: 4, $y: 1);
 
 			background-color: color("dark");
+			box-shadow: 0 spacing(1) spacing(2) 0 hsla(0, 0%, 0%, .3);
 			color: color("light");
-			right: 48px;
+			margin-top: -34px;
 			position: absolute;
+			right: 48px;
 			transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
 			width: 120px;
 			z-index: -10;
