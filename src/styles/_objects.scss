@@ -45,6 +45,15 @@
 		margin-right: 4px;
 		width: spacing(2);
 	}
+
+	&--timeline {
+		flex-shrink: 0;
+		height: spacing(3);
+		padding: spacing(1);
+		stroke: color("light");
+		stroke-width: 1;
+		width: spacing(3);
+	}
 }
 
 .o-list {

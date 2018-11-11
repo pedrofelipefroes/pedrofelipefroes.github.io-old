@@ -83,4 +83,23 @@
 			}
 		}
 	}
+
+	&__timeline {
+		@include l-margin($t: 4);
+		@include l-flex();
+
+		&__item {
+			@include l-flex($spacing: 0);
+			@include l-margin($b: 1);
+			
+			@include l-display-bp {
+				@include l-flex($align: center, $direction: row, $spacing: 2);
+				@include l-margin($b: 0);
+			}
+
+			p {
+				max-width: 60ch;
+			}
+		}
+	}
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="c-view">
+	{{#about}}
+        <nav class="c-navbar">
+            <a href="{{index.url}}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="c-navbar__icon--display-sm o-icon o-icon--navbar-sm">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+            <div class="c-navbar__icon-list">
+                <a href="{{index.url}}" class="c-navbar__icon-list__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--navbar-bp">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span class="c-navbar__icon__legend">Back to Home</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pedrofelipefroes/" class="c-navbar__icon-list__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--navbar-bp">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span class="c-navbar__icon__legend">LinkedIn Profile</span>
+                </a>
+                <a href="mailto:froes.designer.developer@gmail.com" class="c-navbar__icon-list__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--navbar-bp">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span class="c-navbar__icon__legend">Mail Contact</span>
+                </a>
+            </div>
+        </nav>
+		<article class="c-article u-m-bottom--3 u-m-top--4">
+			<div class="c-article__description">
+                <div>
+                {{#header}}
+                    <header class="c-article__header">
+                        <h2 class="u-m-bottom--2">Nice to meet you!<br/>I am Froes.</h2>
+                        <section class="c-article__text u-m-bottom--3">
+                            {{#content}}
+                                <p>{{.}}</p>
+                            {{/content}}
+                            <p>Check out my journey into becoming a Designer and Developer below. And download <a href="{{links.url}}">{{links.text}}</a>.</p>
+                        </section>
+                    </header>
+                    <section class="c-article__timeline">
+                        {{#timeline}}
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{1.color}}">
+                                    <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                                </svg>
+                                <p>{{1.text}}</p>
+                            </div>
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{2.color}}">
+                                    <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
+                                </svg>
+                                <p>{{2.text}}</p>
+                            </div>
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{3.color}}">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                <p>{{3.text}}</p>
+                            </div>
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{4.color}}">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <polyline points="17 11 19 13 23 9"></polyline>
+                                </svg>
+                                <p>{{4.text}}</p>
+                            </div>
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{5.color}}">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                                <p>{{5.text}}</p>
+                            </div>
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{6.color}}">
+                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                    <polyline points="17 6 23 6 23 12"></polyline>
+                                </svg>
+                                <p>{{6.text}}</p>
+                            </div>
+                            <div class="c-article__timeline__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="o-icon o-icon--timeline" style="background-color: {{7.color}}">
+                                    <path d="M17 18a5 5 0 0 0-10 0"></path>
+                                    <line x1="12" y1="2" x2="12" y2="9"></line>
+                                    <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line>
+                                    <line x1="1" y1="18" x2="3" y2="18"></line>
+                                    <line x1="21" y1="18" x2="23" y2="18"></line>
+                                    <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line>
+                                    <line x1="23" y1="22" x2="1" y2="22"></line>
+                                    <polyline points="8 6 12 2 16 6"></polyline>
+                                </svg>
+                                <p>{{7.text}} <a href="{{mailto:index.mail}}">Contact me!</a></p>
+                            </div>
+                        {{/timeline}}
+                    </section>
+                {{/header}}
+                </div>
+            </div>
+		</article>
+	{{/about}}
+
+	{{> ../src/partials/footer/footer }}
+
+</body>
+
+</html>

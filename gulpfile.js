@@ -48,7 +48,7 @@ gulp.task("compile-sass", function() {
 });
 
 gulp.task("serve-index", function() {
-	return gulp.src("src/index.mustache").pipe(gulp.dest("build"));
+	return gulp.src("src/*.mustache").pipe(gulp.dest("build"));
 });
 
 gulp.task("serve-img", function() {
