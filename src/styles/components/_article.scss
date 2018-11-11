@@ -88,6 +88,12 @@
 		@include l-margin($t: 4);
 		@include l-flex();
 
+		@include l-display-bp {
+			@include l-margin($b: 4);
+
+			margin-top: 96px;
+		}
+
 		&__item {
 			@include l-flex($spacing: 0);
 			@include l-margin($b: 1);
@@ -99,6 +105,24 @@
 
 			p {
 				max-width: 60ch;
+			}
+		}
+
+		&__img-list {
+			@include l-flex();
+			@include l-margin($b: 4);
+
+			@include l-display-bp {
+				@include l-margin($b: 0);
+			}
+
+			&__item img {
+				width: 100%;
+				max-width: 320px;
+			}
+
+			&__item figcaption {
+				@include l-padding($l: 0);
 			}
 		}
 	}
