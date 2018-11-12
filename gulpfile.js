@@ -47,6 +47,10 @@ gulp.task("compile-sass", function() {
 		.pipe(livereload());
 });
 
+gulp.task("serve-files", function() {
+	return gulp.src("src/*.pdf").pipe(gulp.dest("."));
+})
+
 gulp.task("serve-index", function() {
 	return gulp.src("src/*.mustache").pipe(gulp.dest("build"));
 });
@@ -118,7 +122,8 @@ const serve = gulp.parallel(
 	"serve-img",
 	"serve-views-img",
 	"serve-views",
-	"serve-json"
+	"serve-json",
+	"serve-files"
 );
 const watch = gulp.parallel("watch-mustache", "watch-sass");
 const start = gulp.series(clean, serve, build, watch);
