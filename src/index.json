@@ -22,6 +22,12 @@
 	},
 	"card-list": [
 		{
+			"name": "Pokémon GO™ Pixelated Redesign",
+			"tags": "Interaction Design",
+			"url": "work/pokemon-go-redesign/pokemon-go-redesign.html",
+			"thumbnail": "work/pokemon-go-redesign/thumbnail.jpg"
+		},
+		{
 			"name": "PTO Scheduler Web App",
 			"tags": "Interaction Design",
 			"url": "work/pto-scheduler-web-app/pto-scheduler-web-app.html",

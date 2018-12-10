@@ -1,0 +1,37 @@
+{
+	"pokemon-go-redesign": {
+		"header": {
+			"img": "header.jpg",
+			"title": "Pokémon GO™ Pixel Art Redesign",
+			"tags": "Interaction Design",
+			"client": "Passion project (work in progress)",
+			"year": "2018",
+			"tools": "PikoPixel, Photoshop & Sketch"
+		},
+		"text": [
+			"I’ve always been passionate about Pokémon: it inspired me to draw, write, and imagine ever since I first played it back in 1997. Its first games had a unique pixel art style that stuck to me, and I’ve always wondered what would be like if it was applied to recent 3D-oriented Pokémon games. Pokémon GO™, the franchise most successful attempt at mobile apps, seemed the perfect opportunity to make this wondering into reality. They’ve already toyed with the idea before, but I wanted to go a step further and bring Pokémon Gold™, Pokémon Silver™, and Pokémon Crystal™ beautiful pixel art to the app.",
+			"Each of the six areas had its IT concept translated into an icon accompanied by the company logo. The neon colors followed the company branding and provided the cool, stylish feel the Marketing Team wanted. Since the campaign was primarily aimed at a Facebook carousel ad, connecting each icon gave a sense of continuity between the areas, and also represented how intertwined Avenue Code perceives them.",
+			"While this is still a work-in-progress, it already brings on the nostalgia from the old Pokémon titles. Next steps include designing more screens and different backgrounds, and then creating a prototype with Framer."
+		],
+		"img-list": [
+			{
+				"alt": "Pokémon GO™ Pixel Art Redesign Source, by Froes, Designer and Developer",
+				"url": "pokemon-go-redesign-1.jpg",
+				"caption": "Pokémon Crystal™ sprites were used in the redesign combined with custom menu items to design the UI. Custom pixel art backgrounds were designed to maintain the nostalgia feeling to the designs."
+			},
+			{
+				"alt": "Pokémon GO™ Pixel Art Redesign Comparison, by Froes, Designer and Developer",
+				"url": "pokemon-go-redesign-2.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Agile Coaching Graphic, by Froes, Designer and Developer",
+				"url": "pokemon-go-redesign-3.jpg"
+			},
+			{
+				"alt": "IT Practice Areas Ads' Frontend Development Graphic, by Froes, Designer and Developer",
+				"url": "pokemon-go-redesign-4.jpg",
+				"caption": "Next steps include the creation of more screens for the redesign, followed by an interactive prototype."
+			}
+		]
+	}
+}
