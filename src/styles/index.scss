@@ -1,0 +1,26 @@
+@import "./base.scss";
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-on-bg);
+    font-family: $font-sans-serif;
+    font-feature-settings: "pnum" on, "lnum" on;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+
+    @media screen and (hover: hover) {
+        cursor: none;
+    }
+}
+
+a {
+    cursor: none;
+    text-decoration: underline;
+
+    @include breakpoint(768) {
+        white-space: nowrap;
+    }
+}
+
+@import "./utilities.scss";

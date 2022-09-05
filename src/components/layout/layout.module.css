@@ -1,0 +1,29 @@
+.layout {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: calc(5 * var(--sp-base));
+  max-width: 120em;
+}
+
+@media screen and (min-width: 120rem) {
+  .layout {
+    border-left-color: var(--color-on-bg);
+    border-left-style: solid;
+    border-left-width: 0.09375rem;
+    border-right-color: var(--color-on-bg);
+    border-right-style: solid;
+    border-right-width: 0.09375rem;
+    border-top-color: var(--color-on-bg);
+    border-top-style: solid;
+    border-top-width: 0.09375rem;
+    box-shadow:
+      0 .25rem .5rem hsl(0deg 0% 0% / 0.048),
+      0 .5rem 1rem hsl(0deg 0% 0% / 0.048),
+      0 1rem 2rem hsl(0deg 0% 0% / 0.048),
+      0 2rem 4rem hsl(0deg 0% 0% / 0.048),
+      0 4rem 8rem hsl(0deg 0% 0% / 0.048);
+  }
+}

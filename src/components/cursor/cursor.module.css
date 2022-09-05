@@ -1,0 +1,49 @@
+.is-locked {}
+
+@media screen and (hover: hover) {
+    .cursor {
+        --cursor-height: 1em;
+        --cursor-left: -1em;
+        --cursor-scale: 1;
+        --cursor-top: -1em;
+        --cursor-translateX: 0;
+        --cursor-translateY: 0;
+        --cursor-width: 1em;
+
+        height: var(--cursor-height);
+        left: var(--cursor-left);
+        pointer-events: none;
+        top: var(--cursor-top);
+        transform: translate(-50%, -50%) scale(var(--cursor-scale));
+        transition-property: height, transform, transition, width;
+        width: var(--cursor-width);
+    }
+
+    .cursor, .cursor>div {
+        opacity: 1;
+        position: absolute;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-out;
+        z-index: 30;
+    }
+
+    .cursor>div {
+        background-color: var(--color-on-bg);
+        border-radius: 0.6em;
+        bottom: 0;
+        left: 0;
+        opacity: 0.24;
+        right: 0;
+        top: 0;
+        transform: translate(var(--cursor-translateX), var(--cursor-translateY));
+        transition-property: opacity;
+    }
+
+    .cursor.is-locked {
+        transition-property: height, left, top, width;
+    }
+
+    .cursor.is-locked>div {
+        opacity: 0.06;
+    }
+}

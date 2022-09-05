@@ -1,0 +1,208 @@
+// SCSS USE RULES
+
+@use "sass:math";
+
+// RESET
+// http://meyerweb.com/eric/tools/css/reset/
+//  v2.0 | 20110126
+//  License: none (public domain)
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// FONTS
+
+@font-face {
+    font-family: "GT America Mono LCG";
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/GT-America-LCGV-Mono-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Helvetica Now";
+    font-stretch: 50% 100%;
+    font-style: normal;
+    font-weight: 50 1000;
+    src: url("./fonts/HelveticaNowVar.woff2") format("woff2-variations");
+}
+
+@font-face {
+    font-family: "Helvetica Now";
+    font-stretch: 50% 100%;
+    font-style: italic;
+    font-weight: 50 1000;
+    src: url("./fonts/HelveticaNowVar-Italic.woff2") format("woff2-variations");
+}
+
+// ROOT CUSTOM PROPERTIES
+
+:root {
+    --color-bg: #fff;
+    --color-on-bg: #000;
+    --sp-base: 0.9375rem;
+}
+
+// SCSS VARIABLES
+
+$bps: (
+    375: 23.4375rem,
+    768: 48rem,
+    992: 62rem,
+    1366: 85.375rem,
+    1512: 94.5rem,
+    1920: 120rem,
+);
+
+$font-monospace: "GT America Mono LCG", monospace;
+$font-sans-serif: "Helvetica Now", sans-serif;
+$golden-ratio: 1.6180339887498948482;
+$ms-base: 1.25rem;
+$ms-ratio: 1.5;
+
+// SCSS MIXINS
+
+@mixin breakpoint($value) {
+    @if map-has-key($map: $bps, $key: $value) {
+        @media screen and (min-width: map-get($bps, $value)) {
+            @content;
+        }
+    } @else {
+        @error "Breakpoint value #{$value} not found in $bps map.";
+    }
+}
+
+// SCSS FUNCTIONS
+
+@function ms($n, $base: $ms-base, $scale: $ms-ratio) {
+    $multiplier: math.pow($scale, $n);
+    @return $multiplier * $base;
+}
+
+@function ss($n, $base: var(--sp-base)) {
+    @return (calc($base * $n));
+}

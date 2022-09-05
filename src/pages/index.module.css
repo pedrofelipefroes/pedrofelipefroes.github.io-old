@@ -1,0 +1,26 @@
+.index-header {
+  padding-top: calc(4 * var(--sp-base));
+}
+
+.index-about {
+  padding-top: calc(10 * var(--sp-base));
+}
+
+@media screen and (min-width: 31.625rem) {
+  .index-about>div:last-child {
+    max-width: calc(100% - calc(100% / 1.6180339887498948482));
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .index-header>div a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 85.375rem) {
+  .index-about>div:last-child {
+    grid-column-start: 2;
+    max-width: unset;
+  }
+}

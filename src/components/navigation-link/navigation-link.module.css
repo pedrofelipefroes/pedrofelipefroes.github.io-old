@@ -1,0 +1,13 @@
+.navigation-link {
+    color: var(--color-on-bg);
+    cursor: none;
+    display: inline-flex;
+    letter-spacing: .1em;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.navigation-link:visited {
+    color: var(--color-on-bg);
+}

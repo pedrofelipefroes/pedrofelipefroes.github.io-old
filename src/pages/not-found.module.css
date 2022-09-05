@@ -1,0 +1,16 @@
+.not-found {
+    min-height: calc(100vh - calc(17 * var(--sp-base)));
+    padding-top: calc(5 * var(--sp-base));
+}
+
+@media screen and (min-width: 48em) {
+    .not-found {
+        padding-top: calc(6 * var(--sp-base));
+    }
+}
+
+@media screen and (min-width: 85.375rem) {
+    .not-found>p {
+        margin-bottom: calc(5 * var(--sp-base));
+    }
+}

@@ -1,0 +1,42 @@
+$easing-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+$easing-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+$font-sans-serif: "GT America LCG", sans-serif;
+$font-serif: "GT Super Display", serif;
+$font-monospace: "GT America Mono LCG", monospace;
+$layout-ratio: 1.6180339887498948482;
+$ms-ratio: 1.5;
+
+$breakpoints: (
+    xs: 30em,
+    sm: 60em,
+    md: 80em,
+    lg: 120em
+);
+
+$utilities: (
+    color-bg: ("background-color", var(--color-bg)),
+    font-italic: ("font-style", italic),
+    font-light: ("font-weight", 300),
+    font-medium: ("font-weight", 500),
+    font-monospace: ("font-family", $font-monospace),
+    font-regular: ("font-weight", 400),
+    font-sans-serif: ("font-family", $font-sans-serif),
+    font-serif: ("font-family", $font-serif),
+    font-smcps: ("font-variant-caps", all-small-caps),
+    font-strong: ("font-weight", 700),
+    height-2: ("height", ss(2)),
+    height-full: ("height", 100%),
+    spacing-inline-sm: ("margin-right", ss(1)),
+    spacing-inline-md: ("margin-right", ss(4)),
+    spacing-inset-squish-lg: ("padding", ss(8) ss(4)),
+    spacing-stack-sm: ("margin-bottom", ss(1)),
+    spacing-stack-md: ("margin-bottom", ss(3)),
+    text-center: ("text-align", center),
+    text-right: ("text-align", right),
+    text-nowrap: ("white-space", nowrap),
+    text-on-bg: ("color", var(--color-on-bg)),
+    text-uppercase: ("text-transform", uppercase),
+    tracking-narrow: ("letter-spacing", -.024em),
+    tracking-wider: ("letter-spacing", .24em),
+    width-full: ("width", 100%),
+);
